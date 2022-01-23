@@ -59,7 +59,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: leandrojbraga/kubedev-desafio2:v2.0
+        image: leandrojbraga/kubedev-desafio3-rotten:v1
         ports:
           - containerPort: 5000
         env:
@@ -89,4 +89,4 @@ spec:
   - port: 80
     targetPort: 5000
     nodePort: 30000
-  type: NodePort
+  type: LoadBalancer
